@@ -1,25 +1,59 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Inputs</title>
-    <link rel="stylesheet" href="css/styles.css">
-  </head>
-  <body>
-    <h1>My Contact Details</h1>
-    <p>My fictional address:</p>
-    <p> <a href="www.linkedin.com/in/manelyn-p">LinkedIn</a></p>
-    <p>Phone # +34 611582075</p>
-    <p>Email address: paypamanelyn2@gmail.com</p>
-  <hr size="3">
-    <form action="mailto:paypamanelyn2@gmail.com" method="post" enctype="text/plain">
-      <label>Your Name:</label>
-      <input type="text" name="yourName" value=""><br>
-      <label>Your email:</label>
-      <input type="email" name="yourEmail" value=""><br>
-      <label>Your Message:</label><br>
-      <textarea name="yourMessage" rows="10" cols="30"></textarea><br>
-      <input type="submit" name="">
-    </form>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Me | Manelyn Paypa</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="profile-header">
+      <nav class="site-nav">
+        <a href="index.html">CV</a>
+        <a href="contact-me.html">Contact</a>
+        <a href="hobbies.html">Hobbies</a>
+      </nav>
+      <div class="profile-card">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h1>Get in touch</h1>
+          <p class="summary">If you want to connect about web development work, questions, or collaborations, send a message or reach out via LinkedIn.</p>
+          <div class="contact-links">
+            <a href="index.html" class="button button-secondary">Back to CV</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="content-grid">
+      <section class="panel">
+        <h2>Contact details</h2>
+        <p>Phone: <a href="tel:+34611582075">+34 611 582 075</a></p>
+        <p>Email: <a href="mailto:paypamanelyn2@gmail.com">paypamanelyn2@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/manelyn-p" target="_blank" rel="noreferrer">manelyn-p</a></p>
+      </section>
+
+      <section class="panel">
+        <h2>Send a message</h2>
+        <form action="mailto:paypamanelyn2@gmail.com" method="post" enctype="text/plain">
+          <label for="name">Your name</label>
+          <input id="name" type="text" name="yourName" placeholder="Your full name">
+
+          <label for="email">Your email</label>
+          <input id="email" type="email" name="yourEmail" placeholder="your@email.com">
+
+          <label for="message">Your message</label>
+          <textarea id="message" name="yourMessage" placeholder="How can I help you?" rows="6"></textarea>
+
+          <button type="submit" class="button">Send message</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; 2026 Manelyn C. Paypa. All rights reserved.</p>
+    </footer>
+  </div>
+</body>
 </html>
