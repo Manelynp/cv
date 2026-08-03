@@ -29,4 +29,5 @@ It was created during my HTML course and serves as a foundation for improving my
 🙋‍♀️ Author
 
 Manelyn C. Paypa
+
 Junior Web Developer
