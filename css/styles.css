@@ -349,6 +349,29 @@ a {
   background: #eff8f7;
 }
 
+.education-card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 1.1rem 1rem;
+  border-radius: 18px;
+  background: #f5fbfa;
+  border: 1px solid rgba(47, 98, 111, 0.08);
+}
+
+.education-title {
+  margin: 0;
+  color: #1f404f;
+  font-weight: 700;
+}
+
+.education-school,
+.education-major,
+.education-location {
+  margin: 0;
+  color: #526a78;
+}
+
 .rating,
 .level {
   color: #1c6f67;

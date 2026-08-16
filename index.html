@@ -39,9 +39,6 @@
 
             <div class="contact-links">
               <a href="contact-me.html" class="button">Contact Me</a>
-              <a href="projects.html" class="button button-secondary"
-                >Projects</a
-              >
             </div>
           </div>
         </div>
@@ -49,6 +46,17 @@
 
       <main class="content-grid">
         <div class="content-stack">
+          <section class="panel">
+            <h2>Featured work</h2>
+            <p>
+              My project work focuses on responsive web interfaces, user input
+              handling, and practical front-end development.
+            </p>
+            <div class="contact-links">
+              <a href="projects.html" class="button">View projects</a>
+            </div>
+          </section>
+
           <section class="panel experience">
             <h2>Work Experience</h2>
             <article class="job">
@@ -75,31 +83,6 @@
                 <li>
                   Promoted to support administrative operations and process
                   monitoring
-                </li>
-              </ul>
-            </article>
-          </section>
-
-          <section class="panel projects">
-            <h2>Projects</h2>
-            <article>
-              <h3>Travel Agency Web Application</h3>
-              <p>Project developed during professional training</p>
-              <p>
-                <a
-                  href="https://islaviajesyaventuras.netlify.app/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >islaviajesyaventuras.netlify.app</a
-                >
-              </p>
-              <ul>
-                <li>
-                  Built a responsive web application using HTML, CSS, JavaScript
-                </li>
-                <li>Implemented dynamic pricing and user input handling</li>
-                <li>
-                  Created interactive UI with DOM manipulation and validation
                 </li>
               </ul>
             </article>
@@ -138,13 +121,14 @@
         </div>
 
         <aside class="panel sidebar">
-          <div class="card">
+          <div class="card education-card">
             <h2>Education</h2>
-            <p>
-              <b>Bachelor of Science in Industrial Technology</b>(Incomplete)
+            <p class="education-title">
+              Bachelor of Science in Industrial Technology (Incomplete)
             </p>
-            <br />
-            <p>Cebu Technological University - Philippines</p>
+            <p class="education-school">
+              Cebu Technological University - Philippines
+            </p>
             <ul>
               <li>Major in Drafting Technology</li>
             </ul>
@@ -185,33 +169,32 @@
               </li>
             </ul>
           </div>
-          
+
           <div class="card">
             <h2>Languages</h2>
             <ul class="language-list">
-              <li>
-                <span>Filipino</span><span class="level">Native</span>
-              </li>
+              <li><span>Filipino</span><span class="level">Native</span></li>
               <li>
                 <span>English</span><span class="level">B2 (Certified)</span>
               </li>
               <li>
-                <span>Spanish</span><span class="level">Intermediate (DELE A2, daily use)</span>
+                <span>Spanish</span
+                ><span class="level">Intermediate (DELE A2, daily use)</span>
               </li>
             </ul>
-
           </div>
-          
         </aside>
       </main>
 
       <footer class="site-footer">
-        <p>&copy; <span id="year"></span> Manelyn C. Paypa. All rights reserved.</p>
+        <p>
+          &copy; <span id="year"></span> Manelyn C. Paypa. All rights reserved.
+        </p>
       </footer>
     </div>
 
     <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
   </body>
 </html>
