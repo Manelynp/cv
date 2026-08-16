@@ -39,7 +39,7 @@
 
             <div class="contact-links">
               <a href="contact-me.html" class="button">Contact Me</a>
-              <a href="hobbies.html" class="button button-secondary"
+              <a href="projects.html" class="button button-secondary"
                 >Projects</a
               >
             </div>
@@ -206,8 +206,12 @@
       </main>
 
       <footer class="site-footer">
-        <p>&copy; 2026 Manelyn C. Paypa. All rights reserved.</p>
+        <p>&copy; <span id="year"></span> Manelyn C. Paypa. All rights reserved.</p>
       </footer>
     </div>
+
+    <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
   </body>
 </html>
